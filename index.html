@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multiple label for a field</title>
-    <h2>Multiple labels for a field</h2>
-    <label for="id1">Explicity label</label>
-    <input id="id1" type="text"/>
+    
+    <h2 id = "h2">Multiple labels for a field</h2>
+
+    <div>
+        <label for="id1">label for field 1</label>
+        <input id="id1" type="text" aria-labelledby="h2"/>
+    </div>
+
+    <div>
+        <label for="id2">label for field 2</label>
+        <input id="id2" type="text" aria-label="Aria-label"/>
+    </div>
     
     <form>
         <fieldset>
